@@ -9,7 +9,7 @@ def sender():
     global count
     count = 0
     retry = 0
-    # while True:
+    while True:
     for token in tokens:
             conn = http.client.HTTPSConnection("discord.com")
             conn.request("POST", "/api/v9/channels/1194216308603093114/messages", payload, headers={'Authorization': token, 'Content-Type': "application/json"})
