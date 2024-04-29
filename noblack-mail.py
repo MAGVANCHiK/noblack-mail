@@ -6,6 +6,8 @@ count = 0
 tokens = [str(input("token1: ")), str(input("token2: ")), str(input("token3: "))]
 
 def sender():
+    global count
+    count = 0
     retry = 0
     # while True:
     for token in tokens:
